@@ -1,0 +1,7 @@
+.brands div.selected {
+    background-color: lightseagreen !important;
+    color: white;
+  }
+  .handlink{
+    cursor: pointer;
+}

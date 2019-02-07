@@ -1,0 +1,19 @@
+<h3>{{pagetitle | uppercase}}</h3>
+<div class="container brands">
+  <div class="row">
+    <span class="col-md-2"><strong>Id</strong></span>
+    <span class="col-md-3"><strong>Name</strong></span>
+    <span class="col-md-5"><strong>Description</strong></span>
+  </div>
+  <div class="row" *ngFor="let brand of brandlist" [class.selected]="brand ===  selectedbrand">
+    <span class="col-md-2">{{brand.id}}</span>
+    <span class="col-md-3 handlink" (click)="onClick(brand)">{{brand.name | uppercase}}</span>
+    <span class="col-md-5">{{brand.description | lowercase}}</span>
+  </div>
+</div>
+
+<p></p>
+
+<app-branddetail [branddetail] = "selectedbrand"></app-branddetail>
+
+

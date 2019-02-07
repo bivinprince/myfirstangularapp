@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">{{itle}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/about" routerLinkActive="active">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/admin" routerLinkActive="active">Admin</a>
+      </li>      
+    </ul>
+    
+  </div>
+</nav>

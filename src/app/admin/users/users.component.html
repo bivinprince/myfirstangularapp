@@ -1,0 +1,17 @@
+<h3>{{pagetitle | uppercase}}</h3>
+<div class="container users">
+  <div class="row">
+    <span class="col-md-2"><strong>Id</strong></span>
+    <span class="col-md-5"><strong>Name</strong></span>
+    <span class="col-md-5"><strong>Role</strong></span>
+  </div>
+  <div class="row" *ngFor="let user of userlist" [class.selected]="user ===  singleuser">
+    <span class="col-md-2">{{user.id}}</span>
+    <span class="col-md-5 handlink" (click)="onClick(user)">{{user.name | uppercase}}</span>
+    <span class="col-md-5">{{user.email | lowercase}}</span>
+  </div>
+</div>
+
+<p></p>
+
+<app-userdetail [userdetail] = "singleuser"></app-userdetail>
