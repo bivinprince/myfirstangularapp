@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavheaderComponent implements OnInit {
 
   constructor() { }
-
+  title = 'My First Angular';
   ngOnInit() {
   }
 
